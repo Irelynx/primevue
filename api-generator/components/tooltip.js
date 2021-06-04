@@ -22,6 +22,10 @@ const TooltipModifiers = [
     {
         name: "blur",
         description: "Blur the trigger element"
+    },
+    {
+        name: "disableResize",
+        description: "Disable tooltip removal on window resize"
     }
 ];
 
