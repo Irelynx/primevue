@@ -71,12 +71,13 @@ function show(el) {
     align(el);
     DomHandler.fadeIn(tooltipElement, 250);
 
-    if (!el.$_ptooltipModifiers.disableResize) {
-        window.addEventListener('resize', function onWindowResize() {
-            hide(el);
-            this.removeEventListener('resize', onWindowResize);
-        });
-    }
+    window.addEventListener('resize', function onWindowResize() {
+        hide(el);
+        this.removeEventListener('resize', onWindowResize);
+        setTimeout(function() {
+            show(el);
+        }, 0);
+    });
 
     bindScrollListener(el);
     ZIndexUtils.set('tooltip', tooltipElement, el.$_ptooltipZIndex);
