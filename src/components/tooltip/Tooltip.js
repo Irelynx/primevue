@@ -76,6 +76,11 @@ function show(el) {
             hide(el);
         }
         this.removeEventListener('resize', onWindowResize);
+        if (this.document.activeElement === el) {
+            setTimeout(function() {
+                show(el);
+            }, 0);
+        }
     });
 
     bindScrollListener(el);
