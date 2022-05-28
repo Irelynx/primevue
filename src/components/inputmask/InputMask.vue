@@ -162,7 +162,9 @@ export default {
                             const pos2 = this.caret();
                             const checked = this.checkVal();
 
-                            this.caret(Math.min(pos2.begin, checked));
+                            setTimeout(() => {
+                                this.caret(Math.min(pos2.begin, checked));
+                            }, 0);
                         }
                         if (pos.begin <= this.lastRequiredNonMaskPos) {
                             completed = this.isCompleted();
