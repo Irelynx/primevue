@@ -158,6 +158,13 @@ export default {
                             setTimeout(proxy, 0);
                         } else {
                             this.caret(next);
+
+                            const pos2 = this.caret();
+                            const checked = this.checkVal();
+
+                            setTimeout(() => {
+                                this.caret(Math.min(pos2.begin, checked));
+                            }, 0);
                         }
                         if (pos.begin <= this.lastRequiredNonMaskPos) {
                             completed = this.isCompleted();
