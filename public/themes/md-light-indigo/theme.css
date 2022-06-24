@@ -4113,6 +4113,10 @@
   color: rgba(0, 0, 0, 0.87);
   padding: 0 1.5rem 1.5rem 1.5rem;
 }
+.p-dialog .p-dialog-content:last-of-type {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
 .p-dialog .p-dialog-footer {
   border-top: 0 none;
   background: #ffffff;
@@ -4166,7 +4170,7 @@
 .p-overlaypanel:before {
   border: solid transparent;
   border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #ffffff;
+  border-bottom-color: #f2f2f2;
 }
 .p-overlaypanel.p-overlaypanel-flipped:after {
   border-top-color: #ffffff;
@@ -4911,7 +4915,6 @@
   border: 0 none;
   background: #ffffff;
   color: rgba(0, 0, 0, 0.87);
-  margin-bottom: 0;
   border-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;

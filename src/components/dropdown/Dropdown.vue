@@ -15,7 +15,7 @@
                 <span :class="dropdownIconClass"></span>
             </slot>
         </div>
-        <Teleport :to="appendTarget" :disabled="appendDisabled">
+        <Portal :appendTo="appendTo">
             <transition name="p-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave">
                 <div :ref="overlayRef" :class="panelStyleClass" v-if="overlayVisible" @click="onOverlayClick">
                     <slot name="header" :value="modelValue" :options="visibleOptions"></slot>
@@ -62,7 +62,7 @@
                     <slot name="footer" :value="modelValue" :options="visibleOptions"></slot>
                 </div>
             </transition>
-        </Teleport>
+        </Portal>
     </div>
 </template>
 
@@ -72,6 +72,7 @@ import OverlayEventBus from 'primevue/overlayeventbus';
 import {FilterService} from 'primevue/api';
 import Ripple from 'primevue/ripple';
 import VirtualScroller from 'primevue/virtualscroller';
+import Portal from 'primevue/portal';
 
 export default {
     name: 'Dropdown',
@@ -237,9 +238,11 @@ export default {
         isSelected(option) {
             return ObjectUtils.equals(this.modelValue, this.getOptionValue(option), this.equalityKey);
         },
-        show() {
+        show(isFocus) {
             this.$emit('before-show');
             this.overlayVisible = true;
+
+            isFocus && this.$refs.focusInput.focus();
         },
         hide() {
             this.$emit('before-hide');
@@ -471,7 +474,7 @@ export default {
             ZIndexUtils.clear(el);
         },
         alignOverlay() {
-            if (this.appendDisabled) {
+            if (this.appendTo === 'self') {
                 DomHandler.relativePosition(this.overlay, this.$el);
             }
             else {
@@ -720,14 +723,8 @@ export default {
         emptyMessageText() {
             return this.emptyMessage || this.$primevue.config.locale.emptyMessage;
         },
-        appendDisabled() {
-            return this.appendTo === 'self';
-        },
         virtualScrollerDisabled() {
             return !this.virtualScrollerOptions;
-        },
-        appendTarget() {
-            return this.appendDisabled ? null : this.appendTo;
         },
         dropdownIconClass() {
             return ['p-dropdown-trigger-icon', this.loading ? this.loadingIcon : 'pi pi-chevron-down'];
@@ -737,7 +734,8 @@ export default {
         'ripple': Ripple
     },
     components: {
-        'VirtualScroller': VirtualScroller
+        'VirtualScroller': VirtualScroller,
+        'Portal': Portal
     }
 }
 </script>

@@ -328,6 +328,12 @@ export default {
                         <td>Whether all data is selected.</td>
                     </tr>
                     <tr>
+                        <td>resetFilterOnHide</td>
+                        <td>boolean</td>
+                        <td>false</td>
+                        <td>Clears the filter value when hiding the dropdown.</td>
+                    </tr>
+                    <tr>
                         <td>virtualScrollerOptions</td>
                         <td>object</td>
                         <td>null</td>
@@ -410,6 +416,11 @@ export default {
                         <td>hide</td>
                         <td>-</td>
                         <td>Hides the overlay.</td>
+                    </tr>
+                    <tr>
+                        <td>clearFilter</td>
+                        <td>-</td>
+                        <td>Clears filter input.</td>
                     </tr>
 				</tbody>
 			</table>

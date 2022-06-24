@@ -22,12 +22,12 @@
                 <template #content="slotProps">
                     <table ref="table" role="table" :class="[tableClass, 'p-datatable-table']" :style="[tableStyle, slotProps.spacerStyle]">
                         <DTTableHeader :columnGroup="headerColumnGroup" :columns="slotProps.columns" :rowGroupMode="rowGroupMode"
-                                :groupRowsBy="groupRowsBy" :groupRowSortField="groupRowSortField" :resizableColumns="resizableColumns" :allRowsSelected="allRowsSelected" :empty="empty"
+                                :groupRowsBy="groupRowsBy" :groupRowSortField="groupRowSortField" :reorderableColumns="reorderableColumns" :resizableColumns="resizableColumns" :allRowsSelected="allRowsSelected" :empty="empty"
                                 :sortMode="sortMode" :sortField="d_sortField" :sortOrder="d_sortOrder" :multiSortMeta="d_multiSortMeta" :filters="d_filters" :filtersStore="filters" :filterDisplay="filterDisplay"
                                 @column-click="onColumnHeaderClick($event)" @column-mousedown="onColumnHeaderMouseDown($event)" @filter-change="onFilterChange" @filter-apply="onFilterApply"
                                 @column-dragstart="onColumnHeaderDragStart($event)" @column-dragover="onColumnHeaderDragOver($event)" @column-dragleave="onColumnHeaderDragLeave($event)" @column-drop="onColumnHeaderDrop($event)"
                                 @column-resizestart="onColumnResizeStart($event)" @checkbox-change="toggleRowsWithCheckbox($event)" />
-                        <DTTableBody v-if="frozenValue" :value="frozenValue" :frozenRow="true" class="p-datatable-frozen-tbody" :columns="slotProps.columns" :dataKey="dataKey" :selection="selection" :selectionKeys="d_selectionKeys" :selectionMode="selectionMode" :contextMenu="contextMenu" :contextMenuSelection="contextMenuSelection"
+                        <DTTableBody ref="frozenBodyRef" v-if="frozenValue" :value="frozenValue" :frozenRow="true" class="p-datatable-frozen-tbody" :columns="slotProps.columns" :dataKey="dataKey" :selection="selection" :selectionKeys="d_selectionKeys" :selectionMode="selectionMode" :contextMenu="contextMenu" :contextMenuSelection="contextMenuSelection"
                             :rowGroupMode="rowGroupMode" :groupRowsBy="groupRowsBy" :expandableRowGroups="expandableRowGroups" :rowClass="rowClass" :rowStyle="rowStyle" :editMode="editMode" :compareSelectionBy="compareSelectionBy" :scrollable="scrollable"
                             :expandedRowIcon="expandedRowIcon" :collapsedRowIcon="collapsedRowIcon" :expandedRows="expandedRows" :expandedRowKeys="d_expandedRowKeys" :expandedRowGroups="expandedRowGroups"
                             :editingRows="editingRows" :editingRowKeys="d_editingRowKeys" :templates="$slots" :responsiveLayout="responsiveLayout"
@@ -37,7 +37,7 @@
                             @cell-edit-init="onCellEditInit($event)" @cell-edit-complete="onCellEditComplete($event)" @cell-edit-cancel="onCellEditCancel($event)"
                             @row-edit-init="onRowEditInit($event)" @row-edit-save="onRowEditSave($event)" @row-edit-cancel="onRowEditCancel($event)"
                             :editingMeta="d_editingMeta" @editing-meta-change="onEditingMetaChange" :isVirtualScrollerDisabled="true"  />
-                        <DTTableBody :value="dataToRender(slotProps.rows)" :class="slotProps.styleClass" :columns="slotProps.columns" :empty="empty" :dataKey="dataKey" :selection="selection" :selectionKeys="d_selectionKeys" :selectionMode="selectionMode" :contextMenu="contextMenu" :contextMenuSelection="contextMenuSelection"
+                        <DTTableBody ref="bodyRef" :value="dataToRender(slotProps.rows)" :class="slotProps.styleClass" :columns="slotProps.columns" :empty="empty" :dataKey="dataKey" :selection="selection" :selectionKeys="d_selectionKeys" :selectionMode="selectionMode" :contextMenu="contextMenu" :contextMenuSelection="contextMenuSelection"
                             :rowGroupMode="rowGroupMode" :groupRowsBy="groupRowsBy" :expandableRowGroups="expandableRowGroups" :rowClass="rowClass" :rowStyle="rowStyle" :editMode="editMode" :compareSelectionBy="compareSelectionBy" :scrollable="scrollable"
                             :expandedRowIcon="expandedRowIcon" :collapsedRowIcon="collapsedRowIcon" :expandedRows="expandedRows" :expandedRowKeys="d_expandedRowKeys" :expandedRowGroups="expandedRowGroups"
                             :editingRows="editingRows" :editingRowKeys="d_editingRowKeys" :templates="$slots" :responsiveLayout="responsiveLayout"
@@ -93,7 +93,7 @@ export default {
             default: null
         },
         dataKey: {
-            type: String,
+            type: [String, Function],
             default: null
         },
         rows: {
@@ -1112,8 +1112,19 @@ export default {
                 }
                 else if (this.columnResizeMode === 'expand') {
                     const tableWidth = this.$refs.table.offsetWidth + delta + 'px';
-                    this.$refs.table.style.width = tableWidth;
-                    this.$refs.table.style.minWidth = tableWidth;
+                    const updateTableWidth = (el) => {
+                        !!el && (el.style.width = el.style.minWidth = tableWidth);
+                    }
+
+                    updateTableWidth(this.$refs.table);
+
+                    if (!this.virtualScrollerDisabled) {
+                        const body = this.$refs.bodyRef && this.$refs.bodyRef.$el;
+                        const frozenBody = this.$refs.frozenBodyRef && this.$refs.frozenBodyRef.$el;
+
+                        updateTableWidth(body);
+                        updateTableWidth(frozenBody);
+                    }
 
                     this.resizeTableCells(newColumnWidth);
                 }
@@ -1254,7 +1265,7 @@ export default {
                 let dragIndex = DomHandler.index(this.draggedColumn);
                 let dropIndex = DomHandler.index(this.findParentHeader(event.target));
                 let allowDrop = (dragIndex !== dropIndex);
-                if (allowDrop && ((dropIndex - dragIndex === 1 && this.dropPosition === -1) || (dragIndex - dropIndex === 1 && this.dropPosition === 1))) {
+                if (allowDrop && ((dropIndex - dragIndex === 1 && this.dropPosition === -1) || (dropIndex - dragIndex === -1 && this.dropPosition === 1))) {
                     allowDrop = false;
                 }
 
@@ -1806,7 +1817,7 @@ export default {
                 let orderedColumns = [];
                 for (let columnKey of this.d_columnOrder) {
                     let column = this.findColumnByKey(cols, columnKey);
-                    if (column) {
+                    if (column && !this.columnProp(column, 'hidden')) {
                         orderedColumns.push(column);
                     }
                 }
@@ -1894,7 +1905,7 @@ export default {
             }
             else {
                 const val = this.frozenValue ? [...this.frozenValue, ...this.processedData] : this.processedData;
-                return val && this.selection && Array.isArray(this.selection) && val.every(v => this.selection.some(s => this.equals(s, v)));
+                return ObjectUtils.isNotEmpty(val) && this.selection && Array.isArray(this.selection) && val.every(v => this.selection.some(s => this.equals(s, v)));
             }
         },
         attributeSelector() {
@@ -2131,6 +2142,11 @@ export default {
 .p-datatable-reorder-indicator-down {
     position: absolute;
     display: none;
+}
+
+.p-reorderable-column,
+.p-datatable-reorderablerow-handle {
+    cursor: move;
 }
 
 /* Loader */

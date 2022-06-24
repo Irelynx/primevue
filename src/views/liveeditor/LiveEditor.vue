@@ -313,7 +313,7 @@ export default {
                             dependencies: {
                                 ...extDependencies,
                                 'vue': dependencies['vue'],
-                                'primevue': '^3.12.6',
+                                'primevue': '^3.15.0',
                                 'primeflex': dependencies['primeflex'],
                                 'primeicons': dependencies['primeicons'],
                                 '@babel/cli': dependencies['@babel/cli'],
@@ -537,9 +537,11 @@ import DataView from 'primevue/dataview';
 import DataViewLayoutOptions from 'primevue/dataviewlayoutoptions';
 import DeferredContent from 'primevue/deferredcontent';
 import Dialog from 'primevue/dialog';
+import DialogService from 'primevue/dialogservice'
 import Divider from 'primevue/divider';
 import Dock from 'primevue/dock';
 import Dropdown from 'primevue/dropdown';
+import DynamicDialog from 'primevue/dynamicdialog';
 import Fieldset from 'primevue/fieldset';
 import FileUpload from 'primevue/fileupload';
 import Galleria from 'primevue/galleria';
@@ -608,6 +610,7 @@ const app = createApp(${name});
 app.use(PrimeVue, { ripple: true });
 app.use(ConfirmationService);
 app.use(ToastService);
+app.use(DialogService);
 app.use(router);
 
 app.directive('tooltip', Tooltip);
@@ -645,6 +648,7 @@ app.component('Dialog', Dialog);
 app.component('Divider', Divider);
 app.component('Dock', Dock);
 app.component('Dropdown', Dropdown);
+app.component('DynamicDialog', DynamicDialog);
 app.component('Fieldset', Fieldset);
 app.component('FileUpload', FileUpload);
 app.component('Galleria', Galleria);
