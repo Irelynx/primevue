@@ -1,7 +1,7 @@
 {
     "name": "primevue",
-    "version": "3.15.1-SNAPSHOT",
-    "homepage": "https://www.primefaces.org/primevue",
+    "version": "3.27.0-SNAPSHOT",
+    "homepage": "https://primevue.org/",
     "repository": {
       "type": "git",
       "url": "https://github.com/primefaces/primevue.git"
@@ -27,6 +27,6 @@
     },
     "peerDependencies": {
       "vue": "^3.0.0",
-      "primeicons": "^5.0.0"
+      "primeicons": "^5.0.0 || ^6.0.0"
     }
   }

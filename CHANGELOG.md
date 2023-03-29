@@ -1,5 +1,514 @@
 # Changelog
 
+## [3.26.1](https://github.com/primefaces/primevue/tree/3.26.1) (2023-03-27)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.26.0...3.26.1)
+
+**Implemented New Features and Enhancements:**
+
+- Improve folder structure for nuxt configurations [\#3802](https://github.com/primefaces/primevue/issues/3802)
+- Image: Add Additional Toolbar Buttons To Preview [\#3771](https://github.com/primefaces/primevue/issues/3771)
+- Image: indicator icon property[\#3492](https://github.com/primefaces/primevue/issues/3492)
+
+**Fixed bugs:**
+
+- The esm builds throw an exception due to optional chaining [\#3809](https://github.com/primefaces/primevue/issues/3809)
+- Filtering: doesn't respect optionGroupChildren [\#3807](https://github.com/primefaces/primevue/issues/3807)
+- Api: Typing mismatch [\#3806](https://github.com/primefaces/primevue/issues/3806)
+- DataTable: Row edits when enabled doesn't work with pagination [\#3801](https://github.com/primefaces/primevue/issues/3801)
+- Calendar: Page scrolls to top when clicked on calendar icon [\#3791](https://github.com/primefaces/primevue/issues/3791)
+- Splitter: a couple of errors related to aria-* attributes [\#3783](https://github.com/primefaces/primevue/issues/3783)
+- DataTable: Group Rows do not span all Columns with Selection Mode set and group-by not in the Column list  [\#3781](https://github.com/primefaces/primevue/issues/3781)
+- DataTable: the table disappears when using scrollHeight="flex" and virtual scrolling [\#3772](https://github.com/primefaces/primevue/issues/3772)
+
+## [3.26.0](https://github.com/primefaces/primevue/tree/3.26.0) (2023-03-20)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.25.0...3.26.0)
+
+**Implemented New Features and Enhancements:**
+
+- TriStateCheckbox: case of modelValue undefined [\#3762](https://github.com/primefaces/primevue/issues/3762)
+- Inplace: FocusTrap support [\#3760](https://github.com/primefaces/primevue/issues/3760)
+- ConfirmDialog: Add draggable property [\#3753](https://github.com/primefaces/primevue/issues/3753)
+- Inplace editing does not focus on input element as expected [\#2348](https://github.com/primefaces/primevue/issues/2348)
+
+**Fixed bugs:**
+
+- Slider: Accessibility issue [\#3768](https://github.com/primefaces/primevue/issues/3768)
+- TreeTable: Column Resizing defect [\#3754](https://github.com/primefaces/primevue/issues/3754)
+- Api: Typing mismatch [\#3751](https://github.com/primefaces/primevue/issues/3751)
+- SplitButton/OverlayPanel: OverlayPanel won't open from default call by SplitButton [\#3750](https://github.com/primefaces/primevue/issues/3750)
+- Slider: Focus on slider on mouse click [\#3748](https://github.com/primefaces/primevue/issues/3748)
+- Dropdown preselected disabled option is not shown [\#3541](https://github.com/primefaces/primevue/issues/3541)
+
+## [3.25.0](https://github.com/primefaces/primevue/tree/3.25.0) (2023-03-13)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.24.0...3.25.0)
+
+**Breaking Changes:**
+
+- SelectButton: inverse `unselectable` behaviour [\#3708](https://github.com/primefaces/primevue/issues/3708)
+
+**Implemented New Features and Enhancements:**
+
+- DynamicDialog: Improve `templates` option to use dynamic components in header and footer templates. [\#3736](https://github.com/primefaces/primevue/issues/3736)
+- Api: Type mismatch [\#3727](https://github.com/primefaces/primevue/issues/3727)
+- DynamicDialog: Add `emits` option to handle events emitted by the child component [\#3726](https://github.com/primefaces/primevue/issues/3726)
+
+**Fixed bugs:**
+
+- DataTable: rowStyle function doesn't work  [\#3738](https://github.com/primefaces/primevue/issues/3738)
+- Dialog: header buttons autofocus defect [\#3729](https://github.com/primefaces/primevue/issues/3729)
+- Class and Style properties type definition defects [\#3707](https://github.com/primefaces/primevue/issues/3707)
+- InputMask: Dynamic mask change issue [\#3698](https://github.com/primefaces/primevue/issues/3698)
+- Tooltip: cannot unbind events when tooltip value is cleared [\#3645](https://github.com/primefaces/primevue/issues/3645)
+- Calendar: Disable year and month when set minDate or maxDate [\#3589](https://github.com/primefaces/primevue/issues/3589)
+- DataTable frozen columns in footer not freezing [\#3190](https://github.com/primefaces/primevue/issues/3190)
+- ConfirmPopup: page scrolls up when the button is clicked a second time [\#3516](https://github.com/primefaces/primevue/issues/3516)
+
+## [3.24.0](https://github.com/primefaces/primevue/tree/3.24.0) (2023-03-07)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.23.0...3.24.0)
+
+**Breaking Changes:**
+
+- Removed TypeScript types [\#3696](https://github.com/primefaces/primevue/issues/3696)
+- DataTable CSS and responsive structure improvements [\#3682](https://github.com/primefaces/primevue/issues/3682)
+
+**Implemented New Features and Enhancements:**
+
+- SplitButton: New Styling properties [\#3697](https://github.com/primefaces/primevue/issues/3697)
+- Button: New Styling Properties [\#3695](https://github.com/primefaces/primevue/issues/3695)
+- Add appendOnly and inline properties to VirtualScroller [\#3683](https://github.com/primefaces/primevue/issues/3683)
+- Avatar - Image Alt text Accessibility [\#3593](https://github.com/primefaces/primevue/issues/3593)
+- Tab Menu: Add role to ink bar [\#3583](https://github.com/primefaces/primevue/issues/3583)
+- Toast: new `close` and `life-end` methods [\#2989](https://github.com/primefaces/primevue/issues/2989)
+
+**Fixed bugs:**
+
+- Dropdown: editable mode add change event [\#3692](https://github.com/primefaces/primevue/issues/3692)
+- DataTable: cannot uncheck when click the checkbox in column [\#3691](https://github.com/primefaces/primevue/issues/3691)
+- Checkbox: has an attribute that is not supported by input checkboxes.  [\#3678](https://github.com/primefaces/primevue/issues/3678)
+- Badge: do not render Zero correctly [\#3649](https://github.com/primefaces/primevue/issues/3649)
+- InputSwitch: invalid state defect [\#3646](https://github.com/primefaces/primevue/issues/3646)
+- MegaMenu templating defect [\#3621](https://github.com/primefaces/primevue/issues/3621)
+
+## [3.23.0](https://github.com/primefaces/primevue/tree/3.23.0) (2023-01-30)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.22.4...3.23.0)
+
+**Implemented New Features and Enhancements:**
+
+- Menu: `start` and `end` templating [\#3599](https://github.com/primefaces/primevue/issues/3599)
+- Intro 6 New Free Themes [\#3597](https://github.com/primefaces/primevue/issues/3597)
+- DataTable: exportData exclude column footers [\#3328](https://github.com/primefaces/primevue/issues/3328)
+
+**Fixed bugs:**
+
+- Breadcrumb: Home item not using item slot [\#3604](https://github.com/primefaces/primevue/issues/3604)
+- Locale: `endsWith` typing error on d.ts [\#3595](https://github.com/primefaces/primevue/issues/3595)
+- Tag: Duplicate class names [\#3584](https://github.com/primefaces/primevue/issues/3584)
+- DataTable: tabbing error with row select and expanded rows enabled [\#3571](https://github.com/primefaces/primevue/issues/3571)
+- Dialog: dismissableMask not working when closable false [\#3560](https://github.com/primefaces/primevue/issues/3560)
+- DataTable:  Paginator should be below DataTable Footer templating [\#3540](https://github.com/primefaces/primevue/issues/3540)
+- Datatable: RowReorder fails in case of pagination on page other than first & last [\#3443](https://github.com/primefaces/primevue/issues/3443)
+- Calendar: maxDate with 12-hour-format does not allow minute and second value modification  [\#3356](https://github.com/primefaces/primevue/issues/3356)
+
+## [3.22.4](https://github.com/primefaces/primevue/tree/3.22.4) (2023-01-23)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.22.3...3.22.4)
+
+**Fixed bugs:**
+
+- Breadcrumb: when home is not defined, first separator should not be rendered [\#3570](https://github.com/primefaces/primevue/issues/3570)
+- PanelMenu header action color update [\#3561](https://github.com/primefaces/primevue/issues/3561)
+- Unique values created in components are set incorrectly. [\#3558](https://github.com/primefaces/primevue/issues/3558)
+- ZIndexUtils: Dropdown inside Dialog doesn't work [\#3554](https://github.com/primefaces/primevue/issues/3554)
+- PanelMenu: Link items can't be opened with a keyboard \(slot issue\) [\#3553](https://github.com/primefaces/primevue/issues/3553)
+- Material Calendar: Invalid State defect [\#3547](https://github.com/primefaces/primevue/issues/3547)
+- Textarea : Label colour do not changes to primary colour when floating above [\#3530](https://github.com/primefaces/primevue/issues/3530)
+- Calendar: Regression. Incorrect calendar pop-up positioning when used as editor in DataTable [\#3526](https://github.com/primefaces/primevue/issues/3526)
+
+## [3.22.3](https://github.com/primefaces/primevue/tree/3.22.3) (2023-01-17)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.22.2...3.22.3)
+
+**Fixed bugs:**
+
+- ZIndexUtils is not working as expected on the overlays  [\#3549](https://github.com/primefaces/primevue/issues/3549)
+
+## [3.22.2](https://github.com/primefaces/primevue/tree/3.22.2) (2023-01-16)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.22.1...3.22.2)
+
+**Implemented New Features and Enhancements:**
+
+- Sidebar: transition class update and adding `after-hide` event [\#3535](https://github.com/primefaces/primevue/issues/3535)
+
+**Fixed bugs:**
+
+- Divider: dotted vertical divider is not working [\#3534](https://github.com/primefaces/primevue/issues/3534)
+- RadioButton and Rating causes scroll [\#3533](https://github.com/primefaces/primevue/issues/3533)
+- Sidebar: Mask container should be removed from DOM [\#3531](https://github.com/primefaces/primevue/issues/3531)
+- Menu: TypeError with only disabled menuitems [\#3513](https://github.com/primefaces/primevue/issues/3513)
+- DataTable/Paginator:  JumpToInput not working.  Incrementing page not changing input value [\#3538](https://github.com/primefaces/primevue/issues/3538)
+
+## [3.22.1](https://github.com/primefaces/primevue/tree/3.22.1) (2023-01-12)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.22.0...3.22.1)
+
+- Sidebar: Extraneous non-props attributes warnings [\#3524](https://github.com/primefaces/primevue/issues/3524)
+
+**Fixed bugs:**
+
+## [3.22.0](https://github.com/primefaces/primevue/tree/3.22.0) (2023-01-11)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.21.0...3.22.0)
+
+**Implemented New Features and Enhancements:**
+
+- ProgressSpinner| color updates [\#3511](https://github.com/primefaces/primevue/issues/3511)
+- Reimplement Sidebar [\#3474](https://github.com/primefaces/primevue/issues/3474)
+- Pass props to SplitButton MenuButton [\#3394](https://github.com/primefaces/primevue/issues/3394)
+- TabMenu: index of menu item must be accessible in slot [\#3393](https://github.com/primefaces/primevue/issues/3393)
+- `empty` slot for Autocomplete [\#2525](https://github.com/primefaces/primevue/issues/2525)
+
+**Fixed bugs:**
+
+- DropdownMenu: Disabled dropdown can still be opened with screen reader [\#3512](https://github.com/primefaces/primevue/issues/3512)
+- SpeedDial: Overlapping Issue [\#3504](https://github.com/primefaces/primevue/issues/3504)
+- Breadcrumb: Using template the Home icon is not appearing [\#3503](https://github.com/primefaces/primevue/issues/3503)
+- SplitButton: unexpected call of default action [\#3467](https://github.com/primefaces/primevue/issues/3467)
+- Calendar: inline mode accepts focus [\#3452](https://github.com/primefaces/primevue/issues/3452)
+- Data Table: groupRowsBy, prop type error [\#3450](https://github.com/primefaces/primevue/issues/3450)
+- The focus styling is always set to the first element in List components [\#3447](https://github.com/primefaces/primevue/issues/3447)
+- Panel: typo on toggle button props [\#3436](https://github.com/primefaces/primevue/issues/3436)
+- MultiSelect: mark text with shift+Home does not work [\#3435](https://github.com/primefaces/primevue/issues/3435)
+- PanelMenu: open/close events flipped [\#3434](https://github.com/primefaces/primevue/issues/3434)
+- ConfirmPopup: page scrolls up when push the button [\#3432](https://github.com/primefaces/primevue/issues/3432)
+- ConfirmDialog: icon element still rendering even when icon property is null [\#3431](https://github.com/primefaces/primevue/issues/3431)
+- DataTable/Paginator: Double event fire in JumpToPageInput [\#3409](https://github.com/primefaces/primevue/issues/3409)
+- Checkbox: inputClass and inputStyle properties does not apply correctly [\#3406](https://github.com/primefaces/primevue/issues/3406)
+- DataTable: Invalid typing for DataTableSortFieldType [\#3403](https://github.com/primefaces/primevue/issues/3403)
+- Calendar: Invalid TypeScript definitions for modelValue [\#3400](https://github.com/primefaces/primevue/issues/3400)
+- Calendar: Time input doesn't allow PM when typed in [\#3398](https://github.com/primefaces/primevue/issues/3398)
+- FileUpload Missing TypeDefinitions for Callbacks in \#content slot [\#3396](https://github.com/primefaces/primevue/issues/3396)
+- TieredMenu: Menu commands in the TieredMenu don't receive any arguments [\#3391](https://github.com/primefaces/primevue/issues/3391)
+- PanelMenu: passing computed value as a model prop [\#3166](https://github.com/primefaces/primevue/issues/3166)
+- Editor: Can not click change color text and background color in Editor [\#3097](https://github.com/primefaces/primevue/issues/3097)
+- Sidebar overlay not removed after changing position [\#1823](https://github.com/primefaces/primevue/issues/1823)
+
+## [3.21.0](https://github.com/primefaces/primevue/tree/3.21.0) (2022-12-08)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.20.0...3.21.0)
+
+**Implemented New Features and Enhancements:**
+
+- MultiSelect: Very long selection time due to Chips [\#3380](https://github.com/primefaces/primevue/issues/3380)
+- Improve Message Implementation for Accessibility [\#3370](https://github.com/primefaces/primevue/issues/3370)
+- Improve Toast Implementation for Accessibility [\#3369](https://github.com/primefaces/primevue/issues/3369)
+- Add gap when Toolbar wraps [\#3366](https://github.com/primefaces/primevue/issues/3366)
+- Center content to Toolbar [\#3365](https://github.com/primefaces/primevue/issues/3365)
+- Deprecate Toolbar CSS classes [\#3364](https://github.com/primefaces/primevue/issues/3364)
+- Improve Tree Implementation for Accessibility [\#3360](https://github.com/primefaces/primevue/issues/3360)
+- Calendar: Chrome autocomplete list is overlaying the data picker model [\#3355](https://github.com/primefaces/primevue/issues/3355)
+- Improve SpeedDial Implementation for Accessibility [\#3353](https://github.com/primefaces/primevue/issues/3353)
+- When clicking any menuitem in the Menu components, it always focuses on the first menuitem [\#3352](https://github.com/primefaces/primevue/issues/3352)
+- Improve Image Implementation for Accessibility [\#3351](https://github.com/primefaces/primevue/issues/3351)
+- AutoComplete: new `dropdownClass` prop [\#3350](https://github.com/primefaces/primevue/issues/3350)
+- Improve Galleria Implementation for Accessibility  [\#3349](https://github.com/primefaces/primevue/issues/3349)
+- Improve Carousel Implementation for Accessibility  [\#3348](https://github.com/primefaces/primevue/issues/3348)
+- Improve SplitButton Implementation for Accessibility [\#3344](https://github.com/primefaces/primevue/issues/3344)
+- Improve search operation on PanelMenu [\#3342](https://github.com/primefaces/primevue/issues/3342)
+- Improve Chart Component Implementation for Accessibility [\#3333](https://github.com/primefaces/primevue/issues/3333)
+- Improve DataTable Implementation for Accessibility [\#3330](https://github.com/primefaces/primevue/issues/3330)
+- Improve PickList Implementation for Accessibility  [\#3323](https://github.com/primefaces/primevue/issues/3323)
+- Improve OrderList Implementation for Accessibility [\#3321](https://github.com/primefaces/primevue/issues/3321)
+- Improve TreeTable Implementation for Accessibility [\#3319](https://github.com/primefaces/primevue/issues/3319)
+- Improve DataView Implementation for Accessibility  [\#3310](https://github.com/primefaces/primevue/issues/3310)
+- Improve Paginator Implementation for Accessibility [\#3304](https://github.com/primefaces/primevue/issues/3304)
+- Improve OrganizationChart Implementation for Accessibility [\#3302](https://github.com/primefaces/primevue/issues/3302)
+- Improve Timeline Implementation for Accessibility [\#3296](https://github.com/primefaces/primevue/issues/3296)
+- Dropdown: add keyboard support for Numpad Enter [\#3257](https://github.com/primefaces/primevue/issues/3257)
+- Calendar: Accessibility for Material themes [\#2900](https://github.com/primefaces/primevue/issues/2900)
+
+**Fixed bugs:**
+
+- Password: Eye icon problem in MS Edge and IE [\#3372](https://github.com/primefaces/primevue/issues/3372)
+- Menubar: No items property fails to compile [\#3359](https://github.com/primefaces/primevue/issues/3359)
+- TabMenu: we can not use tab-change event with menuitem templating [\#3357](https://github.com/primefaces/primevue/issues/3357)
+- FileUpload Missing TypeDefinitions for Slots [\#3335](https://github.com/primefaces/primevue/issues/3335)
+- Multiselect Uncaught TypeError [\#3329](https://github.com/primefaces/primevue/issues/3329)
+- AutoComplete: the forceSelection property causes inconsistent behavior when the value is removed [\#3161](https://github.com/primefaces/primevue/issues/3161)
+- Dropdown: Long list causes the page to have a long scroll bar [\#3031](https://github.com/primefaces/primevue/issues/3031)
+
+## [3.20.0](https://github.com/primefaces/primevue/tree/3.20.0) (2022-11-18)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.19.0...3.20.0)
+
+**Implemented New Features and Enhancements:**
+
+- OverlayPanel: deprecate `ariaCloseLabel` prop [\#3287](https://github.com/primefaces/primevue/issues/3287)
+- Improve Inplace Implementation for Accessibility  [\#3286](https://github.com/primefaces/primevue/issues/3286)
+- Improve ProgressBar Implementation for Accessibility [\#3284](https://github.com/primefaces/primevue/issues/3284)
+- Improve Chip Implementation for Accessibility [\#3282](https://github.com/primefaces/primevue/issues/3282)
+- Improve BlockUI Implementation for Accessibility  [\#3280](https://github.com/primefaces/primevue/issues/3280)
+- Improve Badge Implementation for Accessibility [\#3278](https://github.com/primefaces/primevue/issues/3278)
+- Improve Tag Implementation for Accessibility [\#3277](https://github.com/primefaces/primevue/issues/3277)
+- Improve Ripple Implementation for Accessibility [\#3276](https://github.com/primefaces/primevue/issues/3276)
+- Improve Skeleton Implementation for Accessibility  [\#3275](https://github.com/primefaces/primevue/issues/3275)
+- Improve Avatar Implementation for Accessibility [\#3273](https://github.com/primefaces/primevue/issues/3273)
+- Improve ProgressSpinner Implementation for Accessibility [\#3272](https://github.com/primefaces/primevue/issues/3272)
+- Improve Terminal Implementation for Accessibility [\#3271](https://github.com/primefaces/primevue/issues/3271)
+- Improve ScrollTop Implementation for Accessibility  [\#3270](https://github.com/primefaces/primevue/issues/3270)
+
+**Fixed bugs:**
+
+- PrimeIcons missing type definition [\#3292](https://github.com/primefaces/primevue/issues/3292)
+- Panel: `toggleButtonProps` prop defect  [\#3289](https://github.com/primefaces/primevue/issues/3289)
+- Fieldset: `toggleButtonProps` prop defect [\#3288](https://github.com/primefaces/primevue/issues/3288)
+- Calendar: maxDate with 12-hour formatting restricts values incorrectly [\#3253](https://github.com/primefaces/primevue/issues/3253)
+
+## [3.19.0](https://github.com/primefaces/primevue/tree/3.19.0) (2022-11-16)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.18.1...3.19.0)
+
+**Implemented New Features and Enhancements:**
+
+- Update PrimeFlex 3.3.0 [\#3261](https://github.com/primefaces/primevue/issues/3261)
+- Improve OverlayPanel Implementation for Accessibility [\#3254](https://github.com/primefaces/primevue/issues/3254)
+- Improve Tooltip Implementation for Accessibility [\#3248](https://github.com/primefaces/primevue/issues/3248)
+- Chips | Allow multiple seperators [\#3240](https://github.com/primefaces/primevue/issues/3240)
+- Improve ConfirmPopup implementation for Accessibility [\#3236](https://github.com/primefaces/primevue/issues/3236)
+- Improve Sidebar implementation for Accessibility [\#3233](https://github.com/primefaces/primevue/issues/3233)
+- Improve ConfirmDialog implementation for Accessibility  [\#3232](https://github.com/primefaces/primevue/issues/3232)
+- Improve Dialog implementation for Accessibility  [\#3231](https://github.com/primefaces/primevue/issues/3231)
+- FocusTrap Directive [\#3225](https://github.com/primefaces/primevue/issues/3225)
+- Splitter: Emit Resize Start event [\#3203](https://github.com/primefaces/primevue/issues/3203)
+
+**Fixed bugs:**
+
+- PrimeVue Radiobutton - Mobile - scroll to top [\#3266](https://github.com/primefaces/primevue/issues/3266)
+- Calendar: Inline Calendar is jumping when selected mode is range and number of months is more then 1 [\#3247](https://github.com/primefaces/primevue/issues/3247)
+- Slider: Range feature not working correctly [\#3238](https://github.com/primefaces/primevue/issues/3238)
+- Chips | Cannot remove p-focus [\#3237](https://github.com/primefaces/primevue/issues/3237)
+- Menubar: should accept empty items [\#3224](https://github.com/primefaces/primevue/issues/3224)
+- Menu: TypeError with only disabled menuitems [\#3223](https://github.com/primefaces/primevue/issues/3223)
+- Menubar: Menu Icon in mobile view problem [\#3221](https://github.com/primefaces/primevue/issues/3221)
+- DataTable: groupRowsBy has wrong type [\#3219](https://github.com/primefaces/primevue/issues/3219)
+- TieredMenu \(and SplitButton\): Jumps to the top of the page [\#3212](https://github.com/primefaces/primevue/issues/3212)
+
+## [3.18.1](https://github.com/primefaces/primevue/tree/3.18.1) (2022-10-31)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.18.0...3.18.1)
+
+**Implemented New Features and Enhancements:**
+
+- Dialog: Allow custom icons for maximizing [\#3192](https://github.com/primefaces/primevue/issues/3192)
+- InputNumber: `highlightOnFocus` property [\#3179](https://github.com/primefaces/primevue/issues/3179)
+- Inplace: Allow custom icons [\#3134](https://github.com/primefaces/primevue/issues/3134)
+- Slider: Range slider can not be dragged to the left when both thumbs overlap [\#3104](https://github.com/primefaces/primevue/issues/3104)
+- Calendar: Allow custom icons [\#3081](https://github.com/primefaces/primevue/issues/3081)
+- Toast: Allow custom icons [\#3061](https://github.com/primefaces/primevue/issues/3061)
+- Message: Allow custom icons [\#3059](https://github.com/primefaces/primevue/issues/3059)
+- Sidebar: Allow custom icons [\#3057](https://github.com/primefaces/primevue/issues/3057)
+- Dialog: Allow custom icons [\#3054](https://github.com/primefaces/primevue/issues/3054)
+- Chips: Allow custom icons [\#3052](https://github.com/primefaces/primevue/issues/3052)
+
+**Fixed bugs:**
+
+- PanelMenu:  Can't resolve DomHandler [\#3198](https://github.com/primefaces/primevue/issues/3198)
+- ContextMenu: attributes could not be automatically inherited [\#3197](https://github.com/primefaces/primevue/issues/3197)
+- DataTable: the table is broken in 3.18.0 [\#3189](https://github.com/primefaces/primevue/issues/3189)
+- Menubar:  \#item slot is never called [\#3177](https://github.com/primefaces/primevue/issues/3177)
+- OverlayPanel: Missing type defination [\#3168](https://github.com/primefaces/primevue/issues/3168)
+- Tooltip: loose reactivity when the content is empty [\#3163](https://github.com/primefaces/primevue/issues/3163)
+- ContextMenu | does not close when left click outside of menu [\#3158](https://github.com/primefaces/primevue/issues/3158)
+- Breadcrumb: SSR Error window is not defined [\#3156](https://github.com/primefaces/primevue/issues/3156)
+- Calendar | set readonly prop to readonly attribute [\#3155](https://github.com/primefaces/primevue/issues/3155)
+- FileUpload: Failed to resolve the Badge and Button components  [\#3154](https://github.com/primefaces/primevue/issues/3154)
+- Menu.vue: seperatorClass is not a function [\#3151](https://github.com/primefaces/primevue/issues/3151)
+- AutoComplete: mark text with shift+Home does not work. [\#3140](https://github.com/primefaces/primevue/issues/3140)
+- Calendar in inline : Cannot read properties of undefined \(reading 'focus'\) [\#3108](https://github.com/primefaces/primevue/issues/3108)
+- Can select disabled options in multiselect [\#3094](https://github.com/primefaces/primevue/issues/3094)
+- Dropdown: OptionGroup disappear with filter [\#3078](https://github.com/primefaces/primevue/issues/3078)
+- MultiSelect group labels disappear when filtering [\#3068](https://github.com/primefaces/primevue/issues/3068)
+- Calendar: locale am & pm not work on time picker panel [\#2952](https://github.com/primefaces/primevue/issues/2952)
+- ScrollPanel Bars visible with Browser Zoom [\#2137](https://github.com/primefaces/primevue/issues/2137)
+
+## [3.18.0](https://github.com/primefaces/primevue/tree/3.18.0) (2022-10-24)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.17.0...3.18.0)
+
+**Implemented New Features and Enhancements:**
+
+- Update primeicons dependency on build [\#3139](https://github.com/primefaces/primevue/issues/3139)
+- Improve MegaMenu implementation for Accessibility [\#3125](https://github.com/primefaces/primevue/issues/3125)
+- FileUpload: Templating for advance upload [\#3111](https://github.com/primefaces/primevue/issues/3111)
+- Paginator: Responsive breakpoints  [\#3110](https://github.com/primefaces/primevue/issues/3110)
+- Improve TieredMenu implementation for Accessibility [\#3100](https://github.com/primefaces/primevue/issues/3100)
+- Improve PanelMenu implementation for Accessibility [\#3099](https://github.com/primefaces/primevue/issues/3099)
+- Improve Dock implementation for Accessibility [\#3092](https://github.com/primefaces/primevue/issues/3092)
+- Improve Menu implementation for Accessibility [\#3085](https://github.com/primefaces/primevue/issues/3085)
+- InputNumber : pass formattedValue to input event [\#3047](https://github.com/primefaces/primevue/issues/3047)
+- Improve TabMenu implementation for Accessibility [\#3043](https://github.com/primefaces/primevue/issues/3043)
+- Improve Steps implementation for Accessibility  [\#3026](https://github.com/primefaces/primevue/issues/3026)
+- Improve ContextMenu implementation for Accessibility [\#3021](https://github.com/primefaces/primevue/issues/3021)
+- Improve Menubar implementation for Accessibility [\#3020](https://github.com/primefaces/primevue/issues/3020)
+- CascadeSelect: input-text class [\#3013](https://github.com/primefaces/primevue/issues/3013)
+- Multiselect: Allow custom icons [\#3008](https://github.com/primefaces/primevue/issues/3008)
+- Listbox: Allow custom icons [\#3006](https://github.com/primefaces/primevue/issues/3006)
+- AutoComplete: Allow custom icons [\#3004](https://github.com/primefaces/primevue/issues/3004)
+- Update PrimeIcons v6.0.1 [\#3003](https://github.com/primefaces/primevue/issues/3003)
+- CascadeSelect: Allow custom icons [\#3000](https://github.com/primefaces/primevue/issues/3000)
+- Dropdown: Allow custom icons [\#2998](https://github.com/primefaces/primevue/issues/2998)
+- Improve Breadcrumb implementation for Accessibility [\#2977](https://github.com/primefaces/primevue/issues/2977)
+- FileUpload | new `content` slot [\#2974](https://github.com/primefaces/primevue/issues/2974)
+
+**Fixed bugs:**
+
+- Speeddial items visible even if MenuItem object property "visible" is false [\#3131](https://github.com/primefaces/primevue/issues/3131)
+- Tree: Missing types for tree node [\#3106](https://github.com/primefaces/primevue/issues/3106)
+- InputNumber: support highlight on focus property [\#3067](https://github.com/primefaces/primevue/issues/3067)
+- Toast z-index is removed before toast animation is done [\#3050](https://github.com/primefaces/primevue/issues/3050)
+- Calendar: keyboard support bug when there is a disable date next to the focused date  [\#3032](https://github.com/primefaces/primevue/issues/3032)
+- Dropdown: Long list causes the page to have a long scroll bar [\#3031](https://github.com/primefaces/primevue/issues/3031)
+- Galleria: Using touch to move to the next image will allow to go further than the last image [\#3028](https://github.com/primefaces/primevue/issues/3028)
+- InputText: Floating label with placeholder [\#3018](https://github.com/primefaces/primevue/issues/3018)
+- Ripple: not properly destroyed cases [\#3015](https://github.com/primefaces/primevue/issues/3015)
+- ToggleButton: focus-visible not triggered by keyboard navigation [\#2997](https://github.com/primefaces/primevue/issues/2997)
+- Calendar| overlay not visible on second click unless user clicks away first [\#2990](https://github.com/primefaces/primevue/issues/2990)
+- TabView: Next button is not disabled when all the tabs are visible [\#2987](https://github.com/primefaces/primevue/issues/2987)
+- Password: disabled property not working [\#2958](https://github.com/primefaces/primevue/issues/2958)
+- MultiSelect: Scroll to focused item on select [\#2957](https://github.com/primefaces/primevue/issues/2957)
+- Toast: Close button resizes on longer text [\#2949](https://github.com/primefaces/primevue/issues/2949)
+
+
+## [3.17.0](https://github.com/primefaces/primevue/tree/3.17.0) (2022-09-08)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.16.2...3.17.0)
+
+**Implemented New Features and Enhancements:**
+
+- Add prettier to standardize formatting [\#2939](https://github.com/primefaces/primevue/issues/2939)
+- Carousel: Navigators and indicators control props  [\#2928](https://github.com/primefaces/primevue/issues/2928)
+- Password | missing `required` property [\#2921](https://github.com/primefaces/primevue/issues/2921)
+- Improve ScrollPanel implementation for Accessibility [\#2920](https://github.com/primefaces/primevue/issues/2920)
+- Improve focus method to Components [\#2918](https://github.com/primefaces/primevue/issues/2918)
+- Add `autoFilterFocus` property to Dropdown and MultiSelect [\#2916](https://github.com/primefaces/primevue/issues/2916)
+- Improve Splitter implementation for Accessibility [\#2913](https://github.com/primefaces/primevue/issues/2913)
+- New `iconClass` property for Button component [\#2911](https://github.com/primefaces/primevue/issues/2911)
+- Improve Toolbar implementation for Accessibility [\#2909](https://github.com/primefaces/primevue/issues/2909)
+- Improve Panel implementation for Accessibility [\#2908](https://github.com/primefaces/primevue/issues/2908)
+- Improve Fieldset implementation for Accessibility [\#2907](https://github.com/primefaces/primevue/issues/2907)
+- Improve Divider implementation for Accessibility  [\#2906](https://github.com/primefaces/primevue/issues/2906)
+- Improve Deferred Content implementation for Accessibility  [\#2905](https://github.com/primefaces/primevue/issues/2905)
+- Improve Card implementation for Accessibility [\#2904](https://github.com/primefaces/primevue/issues/2904)
+- Add `selectOnFocus` property to Overlay components [\#2902](https://github.com/primefaces/primevue/issues/2902)
+- Improve TabView implementation for Accessibility [\#2896](https://github.com/primefaces/primevue/issues/2896)
+- Improve Accordion implementation for Accessibility [\#2895](https://github.com/primefaces/primevue/issues/2895)
+- Dropdown: Prevent show of overlay when pressing meta key [\#2886](https://github.com/primefaces/primevue/issues/2886)
+- ConfirmDialog : Add support for "Message" slot template, similar to ConfirmPopup [\#2884](https://github.com/primefaces/primevue/issues/2884)
+- Add resetFilterOnHide property to Dropdown [\#2846](https://github.com/primefaces/primevue/issues/2846)
+- Add icon templating to Rating [\#2834](https://github.com/primefaces/primevue/issues/2834)
+- Add `modules` property to Editor [\#2498](https://github.com/primefaces/primevue/issues/2498)
+
+**Fixed bugs:**
+
+- Calendar | input disabled does not work [\#2935](https://github.com/primefaces/primevue/issues/2935)
+- Update for props typing in .vue files [\#2926](https://github.com/primefaces/primevue/issues/2926)
+- Textarea: resize height when window resized if autoResize is true [\#2919](https://github.com/primefaces/primevue/issues/2919)
+- Tooltip: add type/empty check for its value [\#2903](https://github.com/primefaces/primevue/issues/2903)
+- MultiSelect: filtering causes labels of currently selected values to display "null" [\#2901](https://github.com/primefaces/primevue/issues/2901)
+- The type of inputProps prop requires every possible attribute for HTMLInputElement type [\#2891](https://github.com/primefaces/primevue/issues/2891)
+- SpeedDial: Cannot use Scoped Slot to customize items [\#2889](https://github.com/primefaces/primevue/issues/2889)
+- Password: When its value is dynamically set, the strength indicator is not updated [\#2885](https://github.com/primefaces/primevue/issues/2885)
+- AutoComplete: setTimeout\(\) in hide-function sometimes causes NULL-Pointer Exception [\#2881](https://github.com/primefaces/primevue/issues/2881)
+- Password: Unable to add invalid event listener after 3.16 [\#2880](https://github.com/primefaces/primevue/issues/2880)
+- Editor Quill: SSR error document is not defined [\#2842](https://github.com/primefaces/primevue/issues/2842)
+- ConfirmDialog  won't the reject event be triggered when closing things?  [\#2821](https://github.com/primefaces/primevue/issues/2821)
+- Calendar: inline calendar force scroll into viewport when disabledDates changed  [\#2803](https://github.com/primefaces/primevue/issues/2803)
+
+## [3.16.2](https://github.com/primefaces/primevue/tree/3.16.2) (2022-08-23)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.16.1...3.16.2)
+
+**Fixed bugs:**
+
+- Dropdown: UpArrow triggers "Uncaught TypeError: this.visibleOptions.slice\(...\).findLastIndex is not a function" Firefox, Nuxt 3 [\#2872](https://github.com/primefaces/primevue/issues/2872)
+- OverlayPanel: Doesn't work in SSR [\#2871](https://github.com/primefaces/primevue/issues/2871)
+- Tooltip: `escape`, `disabled` and  `fitContent` properties should not accept string as a value [\#2868](https://github.com/primefaces/primevue/issues/2868)
+- AutoComplete: Typescript compilation error due to a typo in the t.ds definition file [\#2866](https://github.com/primefaces/primevue/issues/2866)
+- InputNumber: disabled prop is not passed to input text [\#2864](https://github.com/primefaces/primevue/issues/2864)
+- InputNumber: invalid 'placeholder' prop type \(TS only\) [\#2863](https://github.com/primefaces/primevue/issues/2863)
+- Calendar: showOtherMonths - does not match the description in the documentation [\#2810](https://github.com/primefaces/primevue/issues/2810)
+- Datatable rows are not the full width in scroll both mode [\#2622](https://github.com/primefaces/primevue/issues/2622)
+
+## [3.16.1](https://github.com/primefaces/primevue/tree/3.16.1) (2022-08-17)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.16.0...3.16.1)
+
+**Fixed bugs:**
+
+- Header checkbox is not styled as expected in Material themes. [\#2856](https://github.com/primefaces/primevue/issues/2856)
+- Types: Missing types in PrimeVueLocaleOptions [\#2855](https://github.com/primefaces/primevue/issues/2855)
+- Overlay components don't work with SSR [\#2853](https://github.com/primefaces/primevue/issues/2853)
+- Editor | selection-change typing error [\#2852](https://github.com/primefaces/primevue/issues/2852)
+- InputNumber : incrementButtonClass does not working [\#2850](https://github.com/primefaces/primevue/issues/2850)
+- Dropdown:  Cannot read properties of undefined \(reading 'replaceAll'\) [\#2848](https://github.com/primefaces/primevue/issues/2848)
+- Dropdown and MultiSelect: TS2322 compilcation error [\#2845](https://github.com/primefaces/primevue/issues/2845)
+- CDN Script fails [\#2844](https://github.com/primefaces/primevue/issues/2844)
+- AutoComplete: completeOnFocus with keyboard navigation [\#2824](https://github.com/primefaces/primevue/issues/2824)
+
+## [3.16.0](https://github.com/primefaces/primevue/tree/3.16.0) (2022-08-15)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.15.0...3.16.0)
+
+**Breaking Changes:**
+- Accessibility for Form Components [\#2838](https://github.com/primefaces/primevue/issues/2838)
+- Improve CascadeSelect implementation for Accessibility [\#2831](https://github.com/primefaces/primevue/issues/2831)
+- Improve AutoComplete implementation for Accessibility [\#2822](https://github.com/primefaces/primevue/issues/2822)
+- Improve Listbox implementation for Accessibility [\#2819](https://github.com/primefaces/primevue/issues/2819)
+- Improve MultiSelect implementation for Accessibility [\#2814](https://github.com/primefaces/primevue/issues/2814)
+- Improve Dropdown implementation for Accessibility [\#2811](https://github.com/primefaces/primevue/issues/2811)
+
+**Implemented New Features and Enhancements:**
+
+- Editor | new `selection-change` event [\#2829](https://github.com/primefaces/primevue/issues/2829)
+- SelectButton | new `unselectable` property [\#2826](https://github.com/primefaces/primevue/issues/2826)
+- Add tabindex property to VirtualScroller [\#2813](https://github.com/primefaces/primevue/issues/2813)
+- Add new message options to PrimeVue API [\#2812](https://github.com/primefaces/primevue/issues/2812)
+- New inputClass and inputStyle properties [\#2801](https://github.com/primefaces/primevue/issues/2801)
+- Timeline: new item and index slot props for connector slot [\#2771](https://github.com/primefaces/primevue/issues/2771)
+- Add getVirtualScrollerRef method to DataTable to access virtualScroller's reference [\#2756](https://github.com/primefaces/primevue/issues/2756)
+- The scrollToIndex method doesn't work as expected [\#2755](https://github.com/primefaces/primevue/issues/2755)
+- Slider: key support [\#2735](https://github.com/primefaces/primevue/issues/2735)
+- Add color-scheme style to Themes [\#2730](https://github.com/primefaces/primevue/issues/2730)
+- PickList: Disable show source and target buttons [\#2697](https://github.com/primefaces/primevue/issues/2697)
+- Add hideOnRangeSelection property to Calendar [\#2684](https://github.com/primefaces/primevue/issues/2684)
+- ConfirmDialog: closeOnEscape support [\#2675](https://github.com/primefaces/primevue/issues/2675)
+- OverlayPanel's dismissable prop can't be changed dynamically [\#2540](https://github.com/primefaces/primevue/issues/2540)
+- New `exportFooter` property for Exportable DataTable [\#2395](https://github.com/primefaces/primevue/issues/2395)
+
+**Fixed bugs:**
+
+- Tooltip : Displays empty value [\#2788](https://github.com/primefaces/primevue/issues/2788)
+- appendTo prop TypeScript typing disallows usage of HTML elements [\#2780](https://github.com/primefaces/primevue/issues/2780)
+- DataTable v3: Cannot use the editorCancelCallBack / editorSaveCallback while editing in cell mode [\#2754](https://github.com/primefaces/primevue/issues/2754)
+- Dropdown: with template and no placeholder shows p-emptylabel as placeholder [\#2751](https://github.com/primefaces/primevue/issues/2751)
+- Checkbox, RadioButton:  should not pointer cursor when is disabled [\#2745](https://github.com/primefaces/primevue/issues/2745)
+- Paginator: slot typescript error [\#2738](https://github.com/primefaces/primevue/issues/2738)
+- DataTable: No onLazyLoad property in virtualScrollerOptions props [\#2729](https://github.com/primefaces/primevue/issues/2729)
+- DropDown: Filter with Virtual Scroll does not work as expected [\#2715](https://github.com/primefaces/primevue/issues/2715)
+- Component: Type error for InputNumber's class [\#2712](https://github.com/primefaces/primevue/issues/2712)
+- Calendar: Incorrect TypeScript typing of date slot [\#2703](https://github.com/primefaces/primevue/issues/2703)
+- Dynamic Dialog : style property TypeScript error  [\#2699](https://github.com/primefaces/primevue/issues/2699)
+- Component: Calendar @month-change returns 0-11 and 1-12 [\#2696](https://github.com/primefaces/primevue/issues/2696)
+- Menu, Menubar, ContextMenu, TieredMenu: Extra spacing when no icon [\#2695](https://github.com/primefaces/primevue/issues/2695)
+- Calendar: wrong overlay position [\#2689](https://github.com/primefaces/primevue/issues/2689)
+- Splitter:  mobile resize fails [\#2513](https://github.com/primefaces/primevue/issues/2513)
+- Carousel autoplay not working with static data [\#2356](https://github.com/primefaces/primevue/issues/2356)
+
 ## [3.15.0](https://github.com/primefaces/primevue/tree/3.15.0) (2022-06-15)
 
 [Full Changelog](https://github.com/primefaces/primevue/compare/3.13.1...3.15.0)
@@ -315,6 +824,7 @@
 - Dynamic labels for Menu components [\#449](https://github.com/primefaces/primevue/issues/449)
 
 **Breaking Changes:**
+
 - Rename slot names for paginatorLeft and paginatorRight  [\#1760](https://github.com/primefaces/primevue/issues/1760)
 - Lowercase slot names for PickList sourceHeader-targetHeader  [\#1759](https://github.com/primefaces/primevue/issues/1759)
 
@@ -1093,6 +1603,43 @@
 - Scrollable Table alignment improvement [\#482](https://github.com/primefaces/primevue/issues/482)
 - Button not registered in FileUpload [\#478](https://github.com/primefaces/primevue/issues/478)
 - BlockUI documentation indicates "show" event whereas the actual event is "unblock" [\#485](https://github.com/primefaces/primevue/issues/485)
+
+## [2.10.1](https://github.com/primefaces/primevue/tree/2.10.1) (2022-11-18)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/2.10.0...2.10.1)
+
+**Implemented New Features and Enhancements:**
+
+- PrimeFlex & PrimeIcons version update v2 [\#3291](https://github.com/primefaces/primevue/issues/3291)
+- Sidebar v2: Add slot to header [\#3217](https://github.com/primefaces/primevue/issues/3217)
+
+**Fixed bugs:**
+
+- Slider v2: onDragStart\(\) -\> this.modelValue is undefined [\#3251](https://github.com/primefaces/primevue/issues/3251)
+- Slider v2: range does not work [\#2986](https://github.com/primefaces/primevue/issues/2986)
+- InputNumber v2:  Component with Horizontal with step down disabled [\#2980](https://github.com/primefaces/primevue/issues/2980)
+- Password v2: Initial value is not displayed [\#2894](https://github.com/primefaces/primevue/issues/2894)
+- Textarea v2: resize height when window resized if autoResize is true [\#2919](https://github.com/primefaces/primevue/issues/2919)
+- SpeedDial v2: Cannot use Scoped Slot to customize items [\#2889](https://github.com/primefaces/primevue/issues/2889)
+
+## [2.10.0](https://github.com/primefaces/primevue/tree/2.10.0) (2022-08-23)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/2.9.2...2.10.0)
+
+**Implemented New Features and Enhancements:**
+
+- Button: Bring the loading prop from primevue3 to primevue2 [\#2655](https://github.com/primefaces/primevue/issues/2655)
+- Password: Missing change and blur events [\#2610](https://github.com/primefaces/primevue/issues/2610)
+- v2 PrimeVue @keyup.enter event does not work on InputNumber component [\#2336](https://github.com/primefaces/primevue/issues/2336)
+
+**Fixed bugs:**
+
+- Calendar: Inconsistent @select-month values [\#2859](https://github.com/primefaces/primevue/issues/2859)
+- MegaMenu subItems 'to' route ' is not working [\#2501](https://github.com/primefaces/primevue/issues/2501)
+- Datatable column order state is not saved [\#2346](https://github.com/primefaces/primevue/issues/2346)
+- DataTable SelectAll checkbox stay focused after deselecting [\#2329](https://github.com/primefaces/primevue/issues/2329)
+- Cannot use the editorCancelCallBack / editorSaveCallback while editing in cell mode [\#2598](https://github.com/primefaces/primevue/issues/2598)
+- v2 Calendar - Could not edit end date with time picker properly [\#2546](https://github.com/primefaces/primevue/issues/2546)
 
 ## [2.9.2](https://github.com/primefaces/primevue/tree/2.9.2) (2022-04-13)
 

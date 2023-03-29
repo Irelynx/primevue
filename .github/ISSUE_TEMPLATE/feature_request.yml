@@ -1,7 +1,7 @@
 name: Feature request
 description: Suggest an idea for this project
-title: "Component: Title"
-labels: ["enhancement"]
+title: "Component Name: Issue Title"
+labels: ['Type: New Feature', 'Status: Discussion']
 body:
   - type: textarea
     id: description
